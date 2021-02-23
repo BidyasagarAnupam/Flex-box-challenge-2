@@ -1,0 +1,175 @@
+/* 
+    1 
+    name - Abutilon
+    flower link - https://florgeous.com/wp-content/uploads/2019/10/orange-abutilon.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Abutilon
+
+    2
+    name - Acacia
+    flower link -  https://florgeous.com/wp-content/uploads/2019/10/acacia-white.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Acacia
+
+    3
+    name - Eranthis
+    flower link - https://florgeous.com/wp-content/uploads/2019/10/yellow-aconite.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Eranthis
+
+    4
+    name - African Daisy
+    flower link - https://florgeous.com/wp-content/uploads/2019/10/african-daisy.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Osteospermum
+
+    5
+    name - Agapanthus
+    flower link - https://florgeous.com/wp-content/uploads/2019/10/blue-agapanthus.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Agapanthus
+
+    6
+    name - Ageratum
+    flower link - https://florgeous.com/wp-content/uploads/2019/10/ageratums.jpg
+    wikipedia link - https://en.wikipedia.org/wiki/Ageratum 
+*/
+
+
+body {
+    margin: 20px 15px;
+}
+
+/* for main container */
+div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin: 0px auto; */
+}
+
+/* max width 1001px  */
+@media all and (max-width:1001px)
+{
+    div.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0px auto; */
+    }
+}
+
+/* for left and right box */
+div.left, div.right {
+    height: 560px;
+    width: 300px;
+    /* border: 2px solid red; */
+    margin: 30px 33px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 11px 16px 2px #3f3d3d, inset 7px 8px 8px 1px grey;
+    border-radius: 6px;
+}
+
+
+/* for middle box */
+div.middle {
+    height: 580px;
+    width: 300px;
+    /* border: 2px solid red; */
+    margin: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 11px 16px 2px #3f3d3d, inset 7px 8px 8px 1px grey;
+    border-radius: 6px;
+
+}
+/* hover effect of all boxes */
+div.left:hover, div.right:hover, div.middle:hover {
+    box-shadow: 14px 19px 20px 5px #040303, inset 7px 8px 15px 4px rgb(49 49 49);
+}
+
+/* For image 1 box */
+div.left>div.img1 {
+    background:url(1.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+}
+/* For image 2 box */
+div.middle>div.img2 {
+    background:url(2.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+
+}
+/* For image 3 box */
+div.right>div.img3 {
+    background:url(3.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+
+}
+/* For image 4 box */
+div.left>div.img4 {
+    background:url(4.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+
+}
+/* For image 5 box */
+div.middle>div.img5 {
+    background:url(5.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+
+}
+/* For image 6 box */
+div.right>div.img6 {
+    background:url(6.jpg) center  no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+
+}
+
+/* Styling for heading */
+div.heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0 20px;
+}
+
+/* Styling for text */
+div.text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    line-height: 25px;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+/* Styling for btn */
+a>button.btn {
+    margin: 5px 55px;
+    height: 56px;
+    width: 180px;
+    color: white;
+    background: #757373;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: larger;
+    font-style: italic;
+    border-radius: 6px;
+    box-shadow: inset 5px 5px 4px 4px #4e4d4d;
+}
+
+/* Hover effect of btn */
+a>button.btn:hover {
+    box-shadow: inset -8px -8px 5px 1px #3e3b3b;
+}
